@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 17</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#biografia">Biografia</a></li>
+                <li><a href="#habilidades">Habilidades tecnicas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cuerpo">
+        <h1>Melvin Ihosvanny Castillo Avila</h1>
+        <p id="parrafoIntro">Hola bienvenido a mi pagina!</p>
+        <button onclick="mostrarMensaje()">Boton misterioso</button>
+        <section id="biografia">
+            <h3>Mi biografia</h3>
+            <p>Me llamo Melvin Ihosvanny Castillo Avila y tengo 26 años. Nací en el departamento de Caldas, y mis padres son de Tolima y Cundinamarca.</p>
+            <p>Despues de termianr mis estudios escolares nos mudamos a la ciudad de Santa Marta; Aqui hice mis estudios de 6to a 11avo, donde tambien estudie un poco de electricidad; Y continue mis estudios universitarios en esta ciudad; Luego de terminar mis estudios universitarios entre al SENA para aprender sobre el desarrollo de software, el cual estoy por terminar este año.</p>
+            <p>Asi mismo decidí ampliar un poco mas mis conocimientos y entre a este bootcamp promovido por el ministerio de las TIC.</p>
+        </section>
+    </div>
+    <div class="cuerpoH">
+        <h3 id="habilidades">Mis habilidades tecnicas</h3>
+        <ul>
+            <li>Pensamiento logico</li>
+            <li>Manejo basico HTML</li>
+            <li>Manejo basico JavaScript</li>
+        </ul>
+    </div>
+    <div class="cuerpoH">
+        <h3>Si quieres que te contacte, comparteme tus datos de contacto:</h3>
+        <form class="formulario" onsubmit="return validaFormulario()">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="tel">Celular: </label>
+            <input type="tel" id="tel" name="tel">
+            <label for="email">Correo Electronico: </label>
+            <input type="email" id="email" name="email">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <h3 id="contacto">Contacto</h3>
+        <p>Puedes contactarme a mi correo o celular:</p>
+        <div>
+            <ul>
+                <li>melvin.unilibre@algo.com</li>
+                <li>3190001569</li>
+            </ul>
+        </div>
+        <p>&copy;Melvin Castillo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
